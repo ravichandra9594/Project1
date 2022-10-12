@@ -11,8 +11,18 @@
 				</div>
 				<div class="col-6">
 					<p> Just adding the paragraph </p>
+					<p id="change-p"> Adding a paragraph by "Big Fix" branch </p>
+					<button onclick="changeP();">
+						Click here to change paragraph
+					</button>
 				</div>
 			</div>
 		</div>
 	</body>
+	<script type="text/javascript">
+		var ptag = document.getElementById("change-p");
+		changeP() {
+			ptag.style.color("red");
+		}
+	</script>
 </html>
